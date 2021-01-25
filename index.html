@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <section >
+      <div class="center_div">
+          <h1 class="heading">What personality we have according to your name check it now  !!!</h1>
+           <div class="input_Box">
+               <h3>Enter you name</h3>
+               <input type="text"name=''id='nameid'>
+           </div> 
+           <div class="img_box">
+               <figure>
+                   <img src="https://www.askideas.com/media/13/Welcome-Animated-Picture.jpg" alt="not found"height=200 weight=200 class="imgchange">
+               </figure>
+           </div> 
+           <div class="btn">
+            <button id='btn' >click Me</button>
+           </div>
+           
+      </div>
+
+     </section> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+     <script>
+         $(document).ready(function(){
+             $('button').click(function(){
+                let a= $('#nameid').val();
+                if( !a==""){
+                    $('.imgchange').attr('src',`https://joeschmoe.io/api/v1/${a}`)
+                console.log(a)
+                alert("welcome   "+a)
+                }else{
+                    alert("please enter a name")
+                }
+              
+             })
+    
+         })
+     </script>
+</body>
+</html>
